@@ -1,17 +1,18 @@
-function CEPConsultation(){ 
-  const inputCEP = 13990000; //document.querySelector('#form__CEP').value;
-  let saidaTeste = document.querySelector('#teste');  
+function ZipConsultation(){ 
+  const inputZipCode = document.querySelector('#form__zip-code').value;
+  const zipCode = inputZipCode.replace("-", "");
   
-  const url = 'https://viacep.com.br/'+ inputCEP +'/json/';  
+  const url = 'https://viacep.com.br/'+ zipCode +'/json/';  
   const xhr = new XMLHttpRequest();
   xhr.open('GET', url);  
-  xhr.setRequestHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
+  xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 
 xhr.onreadystatechange = function(){
   if(xhr.readyState == 4){
-  if(xhr.status == 200)
-    saidaTeste.innerText = xhr.responseText;
-    }     
-  }
+  if(xhr.status == 200){
+    console.log(xhr.responseText);
+    }
+  }     
+}
 xhr.send();
 }

@@ -14,36 +14,32 @@
 <body>
   <main>
     <section>
-      <form action="" class="form">
-
+      <form action="" class="form__container">
         <legend class="form__title">Consulta CEP</legend>
-        
-        <!-- <fieldset class="form__fieldset">
-          <label for="form__CEP" class="form__label">Digite o CEP:<input type="number" class="form__input form__CEP" id="form__CEP" value="13990000"></label>          
-          <button class="form__button" id="form__button" type="button" onclick="CEPConsultation(13990000)">Consultar CEP</button>
-        </fieldset>
 
-        <label for="form__logradouro" class="form__label">Logradouro:</label>
-        <input type="text" class="form__input form__logradouro" id="form__logradouro">
+        <label for="form__zip-code" class="form__label label__zip-code">Digite o CEP:</label>
+        <input type="number" class="form__input form__zip-code" id="form__zip-code" value="13990000">
 
+        <button class="form__button" id="form__button" type="button" onclick="ZipConsultation()">Consultar CEP</button>
 
-        <fieldset class="form__fieldset">
-          <label for="form__bairro" class="form__label">Bairro:<input type="text" class="form__input form__bairro" id="form__bairro"></label>
-          <label for="form__numero" class="form__label">Numero:<input type="text" class="form__input form__numero" id="form__numero"></label>
-        </fieldset>
-        
-        <label for="form__cidade" class="form__label">Cidade:</label>
-        <input type="text" class="form__input form__cidade" id="form__cidade">
+        <label for="form__street" class="form__label label__street">Logradouro:</label>
+        <input type="text" class="form__input form__street" id="form__street">
 
-        <fielset class="form__fieldset">
-          <label for="form__complemento" class="form__label">Complemento:<input type="text" class="form__input form__complemento" id="form__complemento"></label>
-          <label for="form__estado" class="form__label">Estado:<input type="text" class="form__input form__estado" id="form__estado"></label>
-        </fielset> -->    
+        <label for="form__number" class="form__label label__number">Numero:</label>
+        <input type="text" class="form__input form__number" id="form__number">        
 
-        <button class="form__button" onclick="CEPConsultation()">Click</button>
-        
-        <p id="teste"></p>
+        <label for="form__district" class="form__label label__district">Bairro:</label>
+        <input type="text" class="form__input form__district" id="form__district">
 
+        <label for="form__complement" class="form__label label__complement">Complemento:</label>
+        <input type="text" class="form__input form__complement" id="form__complement">
+
+        <label for="form__city" class="form__label label__city">Cidade:</label>
+        <input type="text" class="form__input form__city" id="form__city">
+           
+        <label for="form__state" class="form__label label_state">Estado:</label>
+        <input type="text" class="form__input form__state" id="form__state">
+       
       </form>
     </section>
   </main>

@@ -1,11 +1,7 @@
 :root{
   --text-color-01: #000000;
   --text-color-02: #FFFFFF;
-  --background-color-01: #12792cd8;
-  --background-color-02: #00ff0034;
+  --background-color-01: #22b948d8;
+  --background-color-02: #e2f0e2b4;
   --highlight-color-01: #FF5500;
-}
-
-html{
-  box-sizing: border-box;
 }
